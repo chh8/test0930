@@ -1,17 +1,14 @@
 /*
  * case5.c
  *
- * Ä£Ê½2£º¶à±äÁ¿¹ØÁª
- * »ù±¾ÀàĞÍ + ÈÎÎñÓëÖĞ¶Ï
- *  Created on: 2013Äê11ÔÂ6ÈÕ
+ * æ¨¡å¼2ï¼šå¤šå˜é‡å…³è”
+ * åŸºæœ¬ç±»å‹ + ä»»åŠ¡ä¸ä¸­æ–­
+ *  Created on: 2013å¹´11æœˆ6æ—¥
  *      Author: chenrui
  */
 
 #include "case5.h"
 
-volatile unsigned char case5_x;
-volatile unsigned char case5_y;
-volatile unsigned char case5_z;
 
 void case5_main(){
 	int f1, f2, f3;
