@@ -1,30 +1,12 @@
 /*
  * case2.c
  *
- * Ä£Ê½1£ºµ¥±äÁ¿¶à´Î·ÃÎÊÖ®¼äµÄÔ­×ÓĞÔÎ¥·´
+ * æ¨¡å¼1ï¼šå•å˜é‡å¤šæ¬¡è®¿é—®ä¹‹é—´çš„åŸå­æ€§è¿å
  *
- * W-W-R ÁªºÏÌå ÈÎÎñÓëÖĞ¶Ï ±äÁ¿¶ÁĞ´
+ * W-W-R è”åˆä½“ ä»»åŠ¡ä¸ä¸­æ–­ å˜é‡è¯»å†™
  *
- *  Created on: 2013Äê11ÔÂ6ÈÕ
+ *  Created on: 2013å¹´11æœˆ6æ—¥
  *      Author: chenrui
- */
-#include "case2.h"
-
-typedef union pack{
-	unsigned long header;
-	unsigned char data;
-} U_Pack;
-volatile U_Pack packet_case2;
-
-void case2_main(){
-	unsigned char tmp;
-	packet_case2.header = 0x1;
-	idlerun();
-	tmp = packet_case2.data;
-}
-
-void case2_isr(){
-	packet_case2.data = 0x2;  /* bug¡¡*/
-}
+ 
 
 
